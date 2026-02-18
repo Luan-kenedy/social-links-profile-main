@@ -1,0 +1,94 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+@font-face {
+    font-family: myfont-bold;
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: myfont-regular;
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: myfont-semibold;
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+*{
+    padding: 0;
+    font-family: myfont-semibold;
+    margin: 0;
+}
+body{
+    font-size: 14px;
+    margin: 0;
+    background-color: var(--Grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.layout{
+    max-width: 375px;
+    background-color: var(--Grey-800);
+    border-radius: 15px ;
+    padding-bottom: 10px;
+    width: 280px;
+}
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.perfil img{
+    width: 70px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.perfil > h1{
+    color: var(--White);
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.perfil .verde > p{
+    font-size: 10px;
+    color: var(--Green);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-bottom: 15px ;
+    
+}
+.perfil p{
+    font-size: 11px;
+    color: var(--White);
+    text-align: center;
+
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links a{
+    color: var(--White);
+    text-decoration: none;
+}
+.li{
+    padding: 9px 70px;
+    margin:12px;
+    background-color: var(--Grey-700);
+    text-align: center;
+    border-radius: 6px;
+    font-size: 11px;
+}
